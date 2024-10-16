@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 100vh;
+  padding: 1.5em 9em 0;
+  background: url("../img/img-cabecera.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .content-logo {
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+header .content-logo img {
+  z-index: 1;
+}
+
+header .content-botones {
+  position: relative;
+  display: flex;
+  float: right;
+  z-index: 1;
+}
+
+header .content-botones button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 34px;
+  width: 114px;
+  padding: 0.5em;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+header .content-botones button:first-child {
+  border: 1px solid rgb(255, 255, 255, 0.4);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+header .content-botones button:last-child {
+  background-color: #e60914;
+  margin-left: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header .content-botones button img {
+  vertical-align: middle;
+}
+
+header .content-botones button:last-child:hover {
+  background-color: #c2111a;
+}
+
+header .content-h1 {
+  clear: both;
+  max-width: 664px;
+  max-height: 439px;
+  margin: 0 auto;
+  padding: 0 2em;
+  position: relative;
+  top: 25%;
+}
+
+header .content-h1 h1 {
+  margin-bottom: 0.3em;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 70px;
+}
+
+header .content-h1 p {
+  text-align: center;
+  color: #fff;
+  line-height: normal;
+}
+
+header .content-h1 :nth-child(2) {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+header .content-h1 :nth-child(3) {
+  margin-bottom: 1.2em;
+}
+
+header form {
+  position: relative;
+  display: flex;
+}
+
+header form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #b0b0b0;
+  position: absolute;
+}
+
+header form input[type="email"] {
+  min-width: 390px;
+  height: 56px;
+  padding-left: 1em;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgb(255, 255, 255, 0.4);
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+}
+
+header form input[type="email"]::placeholder {
+}
+
+header form input[type="email"]:focus-within {
+  box-shadow: 0 0 0 2px #fff;
+}
+
+header form input[type="email"]:focus-within::placeholder {
+  font-size: 0.7rem;
+}
+
+header form button {
+  width: 190px;
+  height: 56px;
+  margin-left: 0.5em;
+  background-color: #e60914;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header form button img {
+  margin-left: 0.7em;
+  vertical-align: middle;
+}
+
+header form button:hover {
+  background-color: #c2111a;
+}

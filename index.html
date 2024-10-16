@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix España</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <!--------------- CABECERA ---------------->
+    <header>
+      <!-- Bloque menú superior -->
+      <div class="content-logo">
+        <img src="img/Logo-Netflix.svg" alt="logo" />
+      </div>
+      <div class="content-botones">
+        <button id="language-btn1">
+          <img src="img/icon-traductor.svg" alt="icono" />
+          Español
+          <img src="img/icon-arrow-down.svg" alt="flecha" />
+        </button>
+        <ul id="dropdown1" class="dropdown">
+          <li class="selected" id="spanish-option1"><a href="">Español</a></li>
+          <li id="english-option1"><a href="">English</a></li>
+        </ul>
+        <button>iniciar Sesión</button>
+      </div>
+
+      <!-- Bloque Central -->
+      <div class="content-h1">
+        <h1>Películas y series sin límites y mucho más</h1>
+        <p>A partir de 5,49€. Cancela cuando quieras</p>
+        <p>
+          Quieres ver algo ya? Escribe tu dirección de correo para crear una
+          suscripción a Netflix o reactivarla.
+        </p>
+        <form action="" id="form-top">
+          <input type="email" id="email" name="email" placeholder="" required />
+          <label for="email">Dirección de correo</label>
+          <button type="submit">
+            Comenzar
+            <img src="img/icon-arrow-right.svg" alt="flecha" />
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <!------------- SECCIÓN RECOMENDACIONES ------------------->
+    <section class="recomendaciones">
+      <div class="decorator-ellipse"></div>
+      <!-- BLoque más info -->
+      <div class="content-banner-info">
+        <div class="content-info">
+          <div class="imgInfo"></div>
+          <div class="content-mensaje">
+            <div class="content-text">
+              <h2 class="h2-info">
+                Todo lo que te encanta de Netflix por solo 5,49 €.
+              </h2>
+              <p class="p-info">
+                Elige nuestro plan más asequible, que tiene anuncios
+              </p>
+            </div>
+            <button class="button-info">Más información</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque tendencias -->
+      <div class="content-tendencias">
+        <h2 class="h2-tendencias">Tendencias ahora</h2>
+        <div class="content-botones">
+          <button class="button-region" id="button-region">
+            España
+            <img src="img/icon-arrow-down.svg" alt="flecha" />
+          </button>
+          <ul id="dropdown-left" class="dropdown">
+            <li class="selected" id="spain-option"><a href="">España</a></li>
+            <li id="global-option"><a href="">Global</a></li>
+          </ul>
+          <button class="button-seleccion" id="button-seleccion">
+            Películas
+            <img src="img/icon-arrow-down.svg" alt="flecha" />
+          </button>
+          <ul id="dropdown-right" class="dropdown">
+            <li class="selected" id="pelis-option">
+              <a href="">Películas</a>
+            </li>
+            <li id="series-option"><a href="">Series</a></li>
+          </ul>
+        </div>
+        <!-- Carrusel -->
+        <div class="carrusel">
+          <div class="slider-wrapper">
+            <button class="slide-button move-left" id="move-left">
+              <img src="img/icon-lower-than.svg" alt="mover izquierda" />
+            </button>
+
+            <div class="content-cards-pelis">
+              <!-- Cards -->
+              <div class="card-peli peli-1">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">1</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-2">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">2</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-3">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">3</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-4">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">4</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-5">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">5</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-6">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">6</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-7">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">7</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-8">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">8</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-9">
+                <div class="content-top10">
+                  <span class="top">Top </span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">9</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+
+              <div class="card-peli peli-10">
+                <div class="content-top10">
+                  <span class="top">Top</span>
+                  <span class="diez">10</span>
+                </div>
+                <p class="numPeli">10</p>
+                <p class="text-bottom-card">Recién llegada</p>
+              </div>
+            </div>
+
+            <button class="slide-button move-right" id="move-right">
+              <img src="img/icon-greater-than.svg" alt="mover derecha" />
+            </button>
+          </div>
+
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BLoque motivos -->
+      <div class="content-motivos">
+        <h2>Más motivos para unirte</h2>
+        <div class="content-cards-motivos">
+          <div class="card-motivo">
+            <h3 class="h3 motivo">Disfruta de tu tele</h3>
+            <p class="p-motivo">
+              Smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores
+              Blue-ray y muchos más.
+            </p>
+            <img class="icon-motivo" src="img/icon-tv.svg" alt="icono" />
+          </div>
+          <div class="card-motivo">
+            <h3 class="h3 motivo">
+              Descárgate tus favoritas para verlas sin conexión
+            </h3>
+            <p class="p-motivo">
+              Guarda tus títulos favoritos fácilmente para que siempre tengas
+              algo para ver.
+            </p>
+            <img
+              class="icon-motivo"
+              src="img/icon-arrow-circle.svg"
+              alt="icono"
+            />
+          </div>
+          <div class="card-motivo">
+            <h3 class="h3 motivo">Disfruta en todas partes</h3>
+            <p class="p-motivo">
+              Ve en streaming todas las películas y series de tu móvil, tableta,
+              ordenador y televisor.
+            </p>
+            <img class="icon-motivo" src="img/icon-party.svg" alt="icono" />
+          </div>
+          <div class="card-motivo">
+            <h3 class="h3 motivo">Crea perfiles infantiles</h3>
+            <p class="p-motivo">
+              Deja que los niños vivan aventuras con sus personajes favoritos en
+              un espacio diseñado exclusivamente para ellos, gratis con tu
+              suscripción.
+            </p>
+            <img class="icon-motivo" src="img/icon-happy.svg" alt="icono" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <h2 class="preguntas-frecuentes">Preguntas frecuentes</h2>
+      <div class="content-conmutador">
+        <div class="question">
+          <h3 class="question1">¿Qué es Netflix?</h3>
+          <img src="img/icon-plus.svg" alt="icono plus" />
+        </div>
+        <div class="answer">
+          <p class="text-answer">
+            Netflix es un servicio de streaming que ofrece una amplia variedad
+            de series, películas, títulos de anime, documentales y otros
+            contenidos premiados en miles de dispositivos conectados a
+            internet.<br /><br />Puedes ver todo lo que quieras, cuando quieras,
+            por una tarifa mensual reducida. ¡Siempre hay algo nuevo que
+            descubrir, y cada semana se añaden nuevas series y películas!
+          </p>
+        </div>
+        <div class="question">
+          <h3 class="question2">¿Cuánto cuesta Netflix?</h3>
+          <img src="img/icon-plus.svg" alt="icono plus" />
+        </div>
+        <div class="answer">
+          <p class="text-answer">
+            Disfruta de Netflix en tu smartphone, tableta, Smart TV, ordenador o
+            dispositivo de streaming, todo por una tarifa mensual fija. Planes
+            desde 5,49 € a 17,99 € al mes. Sin cargos adicionales ni contratos.
+          </p>
+        </div>
+        <div class="question">
+          <h3 class="question3">¿Dónde puedo ver Netflix?</h3>
+          <img src="img/icon-plus.svg" alt="icono plus" />
+        </div>
+        <div class="answer">
+          <p class="text-answer">
+            Disfruta donde quieras y cuando quieras. Inicia sesión con tu cuenta
+            de Netflix para disfrutar al instante de todo el contenido de
+            Netflix.com desde tu ordenador personal o en cualquier dispositivo
+            conectado a internet que ofrezca la aplicación de Netflix, entre
+            ellos, smart TV, smartphones, tabletas, reproductores multimedia de
+            streaming y consolas de juegos.<br /><br />También puedes descargar
+            tus series favoritas con la aplicación de iOS o Android. Usa las
+            descargas para ver títulos dondequiera que vayas y cuando no
+            dispongas de conexión a internet. Netflix siempre te acompaña.
+          </p>
+        </div>
+        <div class="question">
+          <h3 class="question4">¿Cómo cancelo?</h3>
+          <img src="img/icon-plus.svg" alt="icono plus" />
+        </div>
+        <div class="answer">
+          <p class="text-answer">
+            Netflix es flexible. Sin contratos liosos ni compromisos. Puedes
+            cancelar fácilmente tu cuenta en línea con tan solo dos clics. Sin
+            cargos por cancelación: activa o cancela tu cuenta en cualquier
+            momento.
+          </p>
+        </div>
+        <div class="question">
+          <h3 class="question5">¿Qué puedo ver en Netflix?</h3>
+          <img src="img/icon-plus.svg" alt="icono plus" />
+        </div>
+        <div class="answer">
+          <p class="text-answer">
+            Netflix dispone de una amplia biblioteca de originales de Netflix
+            galardonados, títulos de anime, series de TV, documentales,
+            largometrajes y otros contenidos. Ve todo el contenido que quieras,
+            cuando quieras.
+          </p>
+        </div>
+        <div class="question">
+          <h3 class="question6">¿Es Netflix bueno para los niños?</h3>
+          <img src="img/icon-plus.svg" alt="icono plus" />
+        </div>
+        <div class="answer">
+          <p class="text-answer">
+            La experiencia infantil de Netflix se incluye en la suscripción para
+            que los padres tengan el control mientras los niños disfrutan de
+            series y películas familiares en su propio espacio.<br /><br />Los
+            perfiles infantiles incluyen controles parentales protegidos por PIN
+            que te permiten restringir la calificación por edades del contenido
+            que pueden ver los niños y bloquear determinados títulos que no
+            quieras que vean.
+          </p>
+        </div>
+      </div>
+      <div class="form-group">
+        <p>
+          Quieres ver algo ya? Escribe tu dirección de correo para crear una
+          suscripción a Netflix o reactivarla.
+        </p>
+        <form action="" id="form-bottom">
+          <input type="email" id="email" name="email" placeholder="" required />
+          <label for="email">Dirección de correo</label>
+          <button type="submit">
+            Comenzar
+            <img src="img/icon-arrow-right.svg" alt="flecha" />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!------------------FOOTER ------------------->
+    <footer>
+      <h2 class="telefono">¿Preguntas? Llama al <span>900-759-106</span></h2>
+      <div class="content-menus-footer">
+        <div class="menu-footer">
+          <ul class="menu1">
+            <li><a href="" class="item">Preguntas frecuentes</a></li>
+            <li><a href="" class="item">Inversores</a></li>
+            <li><a href="" class="item">Formas de ver</a></li>
+            <li><a href="" class="item">Información corporativa</a></li>
+            <li><a href="" class="item">Avisos legales</a></li>
+          </ul>
+        </div>
+        <div class="menu-footer">
+          <ul class="menu1">
+            <li><a href="" class="item">Centro de ayuda</a></li>
+            <li><a href="" class="item">Empleo</a></li>
+            <li><a href="" class="item">Términos de uso</a></li>
+            <li><a href="" class="item">Contáctanos</a></li>
+            <li><a href="" class="item">Solo en Netflix</a></li>
+          </ul>
+        </div>
+        <div class="menu-footer">
+          <ul class="menu1">
+            <li><a href="" class="item">Cuenta</a></li>
+            <li><a href="" class="item">Canjear tarjetas regalo</a></li>
+            <li><a href="" class="item">Privacidad</a></li>
+            <li><a href="" class="item">Prueba de velocidad</a></li>
+            <li><a href="" class="item">Opciones de anuncios</a></li>
+          </ul>
+        </div>
+        <div class="menu-footer">
+          <ul class="menu1">
+            <li><a href="" class="item">Zona de prensa</a></li>
+            <li><a href="" class="item">Comprar tarjetas regalo</a></li>
+            <li><a href="" class="item">Preferencias de cookies</a></li>
+            <li><a href="" class="item">Garantía legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <button id="language-btn2">
+        <img src="img/icon-traductor.svg" alt="icono" />
+        Español
+        <img src="img/icon-arrow-down.svg" alt="flecha" />
+      </button>
+      <ul id="dropdown2" class="dropdown">
+        <li class="selected" id="spanish-option2"><a href="">Español</a></li>
+        <li id="english-option2"><a href="">English</a></li>
+      </ul>
+      <span>Netflix España</span>
+    </footer>
+  </body>
+</html>
